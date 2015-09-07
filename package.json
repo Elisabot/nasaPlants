@@ -1,0 +1,22 @@
+{
+  "name": "nasaPlants",
+  "version": "0.0.0",
+  "description": "A database for nasaPlants info",
+  "main": "nasa-plants-server.js",
+  "scripts": {
+    "test": "tests/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elisabot/nasaPlants"
+  },
+  "author": "Elisabeth Meyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Elisabot/nasaPlants/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.3",
+    "body-parser": "~1.13.3"
+  }
+}

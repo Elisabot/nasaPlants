@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Air Purifying Plants</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<h1>Plant Entry Form</h1>
+		<div id="plant-form">
+			<form action="http://localhost:3000/post-plant" method="post">
+			
+			<!-- problem: make fields corresponding to database info -->
+				<!--common name-->
+			<div class="form-group">
+				<label for="commonName">Common Name</label>
+				<input type="text" class="form-control" name="commonName" placeholder="Common Name">
+			</div>
+
+				<!-- binomial -->
+			<div class="form-group">
+				<label for="binomial">Binomial</label>
+				<input type="text" class="form-control" name="binomial" placeholder="Binomial">
+			</div>
+
+				<!-- light -->
+				<!--radio buttons or checkboxes -->	
+			<div class="form-group">
+				<label>Light Preference</label>
+				<br>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-default">
+					<input name="low-light" type="checkbox" autocomplete="off"> Low-light
+				  </label>
+				  <label class="btn btn-default">
+				    <input name="semi-shade" type="checkbox" autocomplete="off"> Semi-shade
+				  </label>
+				  <label class="btn btn-default">
+				    <input name="semi-sun" type="checkbox" autocomplete="off"> Semi-sun
+				  </label>
+				  <label class="btn btn-default">
+				    <input name="full-sun" type="checkbox" autocomplete="off"> Full-sun
+				  </label>
+				</div>
+
+			</div>
+
+				<!-- moisture -->
+				<!--radio buttons or checkboxes -->	
+			<div class="form-group">
+				<label>Watering</label>
+				<br>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-default">
+					<input name="let-dry" type="checkbox" autocomplete="off"> Let dry between waterings
+				  </label>
+				  <label class="btn btn-default">
+				    <input name="keep-moist" type="checkbox" autocomplete="off"> Keep moist but not soggy
+				  </label>
+				  <label class="btn btn-default">
+				    <input name="dry-winder" type="checkbox" autocomplete="off"> Water less in winter
+				  </label>
+				  <br>
+				  <label class="btn btn-default">
+				    <input name="humid" type="checkbox" autocomplete="off"> Prefers humidity
+				  </label>
+				  <label class="btn btn-default">
+				    <input name="dry" type="checkbox" autocomplete="off"> Dry climate
+				  </label>
+				</div>
+
+			</div>
+
+				<!-- filters -->
+				<!--radio buttons or checkboxes -->
+			<div class="form-group">
+				<label>Chemicals Filtered</label>
+				<br>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-default">
+					<input name="benzene" type="checkbox" autocomplete="off"> Benzene
+				  </label>
+				  <label class="btn btn-default">
+				    <input name="formaldehyde" type="checkbox" autocomplete="off"> Formaldehyde
+				  </label>
+				  <label class="btn btn-default">
+				    <input name="trichloroethylene" type="checkbox" autocomplete="off"> Trichloroethylene
+				  </label>
+				  <label class="btn btn-default">
+				    <input name="xylene-and-toluene" type="checkbox" autocomplete="off"> Xylene & Toluene
+				  </label>
+				  <label class="btn btn-default">
+				    <input name="ammonia" type="checkbox" autocomplete="off"> Ammonia
+				  </label>
+				</div>
+			</div>
+
+			<!--submit data -->
+			<button type="submit" class="btn btn-info">Submit</button>
+
+			</form>
+		</div>
+	</div>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
