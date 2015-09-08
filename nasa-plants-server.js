@@ -1,11 +1,15 @@
 var http = require('http');
 var express = require('express');
 var bodyParser = require('body-parser');
+var MongoClient = require('mongodb').MongoClient;
 
+// config
+var port = 3000;
+var dburl = 'mongodb://localhost:27017/mycooldb';
 
 
 var app = express();
-
+var db = null;
 
 
 app.use(express.static("static"));
@@ -17,7 +21,11 @@ app.get('/', function (req, res) {
 })
 
 app.post('/post-plant', function (req, res) {
-	res.json(req.body);
+	var nasaPlants = db.collection('nasaPlants');
+	nasaPlants.insert(req.body, function (err, inserted) {
+		if (err) { throw err };
+		res.send('plant added!')
+	});
 	// res.send('work in progress');
 })
 
@@ -26,6 +34,13 @@ app.post('/post-plant', function (req, res) {
 // 	res.send('plant-form.html');
 // }) 
 
-app.listen(3000);
+MongoClient.connect(dburl, function (err, dbcollection) {
+	if (err) { throw err };
+	
+	console.log("connected to database at", dburl);
+	db = dbcollection;
+	app.listen(port, function () {
+		console.log("server listening on port", port);
+	});
 
-console.log("hey")
+})
