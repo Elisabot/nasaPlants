@@ -1,0 +1,15 @@
+h1, body {
+	font-family: 'Montserrat', sans-serif;
+	color: #474757;
+}
+
+label, h3 {
+	font-family: 'Roboto Slab', serif;
+}
+
+/*Slider styling */
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+
+/*responsiblility section*/
