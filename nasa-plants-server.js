@@ -14,6 +14,7 @@ var db = null;
 
 app.use(express.static("static"));
 app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.json());
 
 
 app.get('/', function (req, res) {
@@ -27,6 +28,11 @@ app.post('/post-plant', function (req, res) {
 		res.send('plant added!')
 	});
 	// res.send('work in progress');
+})
+
+app.post('/plant-query', function (req, res) {
+	console.log(req.body);
+	res.end('200')
 })
 
 

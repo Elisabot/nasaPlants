@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>Enter Plant Data</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab:300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 </head>
 <body>
@@ -14,20 +16,20 @@
 			<!-- problem: make fields corresponding to database info -->
 				<!--common name-->
 			<div class="form-group">
-				<label for="commonName">Common Name</label>
+				<h2 for="commonName">Common Name</h2>
 				<input type="text" class="form-control" name="commonName" placeholder="Common Name">
 			</div>
 
 				<!-- binomial -->
 			<div class="form-group">
-				<label for="binomial">Binomial</label>
+				<h2 for="binomial">Binomial</h2>
 				<input type="text" class="form-control" name="binomial" placeholder="Binomial">
 			</div>
 
 				<!-- light -->
 				<!--radio buttons or check-boxes -->	
 			<div class="form-group">
-				<label>Light Preference</label>
+				<h2>Light Preference</h2>
 				<br>
 				<div class="btn-group" data-toggle="buttons">
 					<label class="btn btn-default">
@@ -49,7 +51,7 @@
 		<!-- moisture -->
 		<!--radio buttons or check-boxes -->	
 			<div class="form-group">
-				<label>Watering</label>
+				<h2>Watering</h2>
 				<br>
 				<div class="btn-group" data-toggle="buttons">
 					<label class="btn btn-default">
@@ -66,7 +68,7 @@
 
 		<!-- climate -->
 			<div class="form-group">
-				<label>Climate</label>
+				<h2>Climate</h2>
 				<br>
 				<div class="btn-group" data-toggle="buttons">
 					<label class="btn btn-default">
@@ -79,27 +81,27 @@
 
 			</div>
 
-				<!-- filters -->
+				<!-- chemilas filtered -->
 				<!--radio buttons or check-boxes -->
 			<div class="form-group">
-				<label>Chemicals Filtered</label>
+				<h2>Chemicals Filtered</h2>
 				<br>
 				<div class="btn-group" data-toggle="buttons">
 					<label class="btn btn-default">
-					<input name="chemical" value="benzene" type="checkbox" autocomplete="off"> Benzene
-				  </label>
-				  <label class="btn btn-default">
-				    <input name="chemical" value="formaldehyde" type="checkbox" autocomplete="off"> Formaldehyde
-				  </label>
-				  <label class="btn btn-default">
-				    <input name="chemical" value="trichloroethylene" type="checkbox" autocomplete="off"> Trichloroethylene
-				  </label>
-				  <label class="btn btn-default">
-				    <input name="chemical" value="xylene-and-toluene" type="checkbox" autocomplete="off"> Xylene &amp; Toluene
-				  </label>
-				  <label class="btn btn-default">
-				    <input name="chemical" value="ammonia" type="checkbox" autocomplete="off"> Ammonia
-				  </label>
+						<input name="chemical" value="benzene" type="checkbox" autocomplete="off"> Benzene
+					</label>
+					<label class="btn btn-default">
+				    	<input name="chemical" value="formaldehyde" type="checkbox" autocomplete="off"> Formaldehyde
+					</label>
+					<label class="btn btn-default">
+				    	<input name="chemical" value="trichloroethylene" type="checkbox" autocomplete="off"> Trichloroethylene
+					</label>
+					<label class="btn btn-default">
+				    	<input name="chemical" value="xylene-and-toluene" type="checkbox" autocomplete="off"> Xylene &amp; Toluene
+					</label>
+					<label class="btn btn-default">
+				    	<input name="chemical" value="ammonia" type="checkbox" autocomplete="off"> Ammonia
+					</label>
 				</div>
 			</div>
 
