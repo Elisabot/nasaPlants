@@ -29,6 +29,9 @@ var userFormInputs = $("form input").change( function () {
 	// console.log(formData);
 	jQuery.post('/plant-query', formData, function (data, status) {
 		console.log(status, data);
+		$("#results").html(data.map( function (plant) {
+			return "<li>"+plant.commonName+"</li>";
+		}));
 	})
 
 });
