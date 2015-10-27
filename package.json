@@ -20,5 +20,8 @@
     "body-parser": "~1.13.3",
     "mongodb": "~2.0.42",
     "rangeslider.js": "~2.0.2"
+  },
+  "devDependencies": {
+    "should": "~7.1.1"
   }
 }
