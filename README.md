@@ -13,8 +13,8 @@ Features
 
 Run Locally
 ------------
-'mongo localhost:27017/mycooldb'
-'node nasa-plants-server.js'
+    mongo localhost:27017/mycooldb
+    node nasa-plants-server.js
 
 
 Contribute
