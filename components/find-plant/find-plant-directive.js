@@ -1,0 +1,1 @@
+plantApp.directive('findPlantDirective', function ())

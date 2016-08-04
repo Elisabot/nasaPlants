@@ -1,3 +1,0 @@
-function validatePlant(entry) {
-  // happiness
-}
