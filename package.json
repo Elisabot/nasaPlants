@@ -1,7 +1,7 @@
 {
   "name": "nasaPlants",
   "version": "0.0.0",
-  "description": "A database for nasaPlants info",
+  "description": "An interface for nasaPlants info",
   "main": "nasa-plants-server.js",
   "scripts": {
     "test": "tests/tests.js"
@@ -16,8 +16,9 @@
     "url": "https://github.com/Elisabot/nasaPlants/issues"
   },
   "dependencies": {
-    "express": "~4.13.3",
+    "angular-animate": "^1.5.8",
     "body-parser": "~1.13.3",
+    "express": "~4.13.3",
     "mongodb": "~2.0.42",
     "rangeslider.js": "~2.0.2"
   },

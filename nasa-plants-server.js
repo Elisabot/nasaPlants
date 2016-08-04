@@ -17,9 +17,6 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
 
-//c.r.u.d.
-//create, read, update, destroy
-
 // app.get('/', function (req, res) {
 // 	res.send('hello cosmos');
 // })

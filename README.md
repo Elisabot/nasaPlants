@@ -10,6 +10,10 @@ Features
 - Intuitive to use
 - Presents data from studies in an easy to understand format
 
+Run Locally
+------------
+
+
 
 Contribute
 ----------
