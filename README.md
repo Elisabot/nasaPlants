@@ -1,5 +1,6 @@
 nasaPlants
 ========
+This is under developement.
 
 nasaPlants will help you select an ideal houseplant by sorting results based on inputs such as lighting, humidity, and environmental pollutants.
 
@@ -12,7 +13,8 @@ Features
 
 Run Locally
 ------------
-
+'mongo localhost:27017/mycooldb'
+'node nasa-plants-server.js'
 
 
 Contribute
