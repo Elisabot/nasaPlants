@@ -1,3 +1,3 @@
-(function(){
-	var app = angular.module('plantApp', []);
-})();
+(function () {
+  var app = angular.module('plantApp', [])
+})()

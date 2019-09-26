@@ -13,8 +13,9 @@ Features
 
 Run Locally
 ------------
-    mongo localhost:27017/mycooldb
-    node nasa-plants-server.js
+	make sure you've got mongo and node installed, clone this repo and then... watch how it doesn't built because it's been an eternity since this project has been touched.
+    `mongo localhost:27017/mycooldb`
+    `node nasa-plants-server.js`
 
 
 Contribute
