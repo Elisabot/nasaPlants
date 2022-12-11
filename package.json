@@ -22,7 +22,7 @@
     "angular-material": "^1.1.0-rc.5",
     "angular-messages": "^1.7.2",
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "kerberos": "0.0.24",
     "mongodb": "^3.5.0",
     "rangeslider.js": "~2.0.2"
